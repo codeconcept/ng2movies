@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  title = "Films";
+  actorChosen;
+
+  sciFiMovie = {
+    title: 'The Terminator',
+    year: 1984,
+    director: 'James Cameron',
+    actors: [ 'Arnold Schwarzenegger', 'Linda Hamilton', 'Michael Biehn']    
+  }
+
+  showActor(actor){
+    this.actorChosen = actor;
+  }
+
 }

@@ -1,3 +1,9 @@
 <h1>
   {{title}}
 </h1>
+
+<div *ngIf="actorChosen">
+  acteur choisi : {{actorChosen}}
+</div>
+
+<movie [movie]="sciFiMovie" (onActorMadeFovorite)="showActor($event)"></movie>

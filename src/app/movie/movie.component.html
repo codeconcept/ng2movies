@@ -1,0 +1,16 @@
+<h2>{{movie.title}} ({{movie.year}})</h2>
+
+
+<div>
+  <div>
+    <h4>Acteurs</h4>
+    <div>
+      <ul>
+        <li *ngFor="let actor of movie.actors" (click)="favoriteActor(actor)">{{ actor }}</li>
+      </ul>
+    </div>
+
+    <h4>Réalisateur</h4>
+    <div>{{movie.director}}</div>
+  </div>
+</div>
